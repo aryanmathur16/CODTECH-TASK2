@@ -1,0 +1,16 @@
+print("STUDENT GRADE TRACKER")
+
+name=str(input("enter the name of the student: "))
+roll_no=int(input("enter the roll number of the student:"))
+print("NOTE: 100 is the maximum grades alloted to each subject")
+G1=int(input("enter the grade scored by  student in 'PSD':"))
+G2=int(input("enter the grade scored by  student in 'AI':"))
+G3=int(input("enter the grade scored by  student in 'DS':"))
+G4=int(input("enter the grade scored by  student in 'SOFT SKILL':"))
+G5=int(input("enter the grade scored by  student in 'TC':"))
+
+average = (G1+G2+G3+G4+G5)/5
+print(f"the average grade of the student {name} is  ",average )
+total=(G1+G2+G3+G4+G5)
+print(f"the total grades of student {name} and roll number {roll_no} is ", total)
+print("the GPA is",(total/500)*100,"%")
